@@ -1,33 +1,34 @@
 <template>
-  <ul></ul>
+  <the-header title="RememberMe"></the-header>
+  <the-resources></the-resources>
 </template>
 
 <script>
+
+import TheHeader from './components/layouts/TheHeader.vue';
+import TheResources from './components/resources/TheResources.vue';
 export default {
+  components: {
+    TheHeader,
+    TheResources,
+  },
   data() {
     return {
-      storedResources: [
-        {
-          id: 'offical guide',
-          title: 'Offical Guide',
-          description: 'The Official Vus JS Documentation',
-          link: 'http://vuejs.org',
-        },
-        {
-          id: 'Google',
-          title: 'Google Chrome',
-          description: 'Learn to Google',
-          link: 'http://google.org',
-        }
-      ], 
+      
     }
-  },
+  }
 }
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
 html {
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
